@@ -11,12 +11,14 @@ const tokens = {
 const users = {
   'admin-token': {
     roles: ['admin'],
+    password: 'admin_password',
     introduction: '超级管理员',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'admin'
   },
   'editor-token': {
     roles: ['editor'],
+    password: 'editor_password',
     introduction: '普通员工',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'editor'
@@ -30,13 +32,20 @@ export default [
     type: 'post',
     response: config => {
       const { username } = config.body
+      const { password } = config.body
       const token = tokens[username]
 
+      console.log(token)
       // mock error
       if (!token) {
         return {
           code: 60204,
-          message: 'Account and password are incorrect.'
+          message: '帐户和密码不正确2。'
+        }
+      } else if (password !== users[token.token].password) {
+        return {
+          code: 60204,
+          message: '帐户和密码不正确。'
         }
       }
 

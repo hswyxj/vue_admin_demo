@@ -2,6 +2,7 @@ import Mock from 'mockjs'
 import { deepClone } from '../../src/utils/index.js'
 import { asyncRoutes, constantRoutes } from './routes.js'
 
+// 深拷贝
 const routes = deepClone([...constantRoutes, ...asyncRoutes])
 
 const roles = [
@@ -34,7 +35,7 @@ const roles = [
     password: 'visitor_password',
     iphonenum: 13111111113,
     email: 'visitor_user@yyft.com',
-    description: '只是个访客,只能查看主页和文档页。',
+    description: '只是个访客,只能查看主页。',
     update_time: +Mock.Random.date('T'),
     routes: [{
       path: '',

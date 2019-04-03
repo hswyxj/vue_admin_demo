@@ -1,4 +1,5 @@
 import { asyncRoutes, constantRoutes } from '@/router'
+// import { asyncRoutes, constantRoutes } from '../../../mock/role/routes'
 
 /**
  * 通过meta.role判断是否与当前用户权限匹配

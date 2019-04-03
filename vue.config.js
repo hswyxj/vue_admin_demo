@@ -23,13 +23,15 @@ module.exports = {
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development' ? 'error' : false,
   productionSourceMap: false,
+
   devServer: {
     port: port,
-    open: true,
+    open: false,
     overlay: {
       warnings: false,
       errors: true
     },
+    disableHostCheck: false, // 热更新
     proxy: {
       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy

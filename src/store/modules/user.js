@@ -37,7 +37,7 @@ const actions = {
         const { data } = response
         commit('SET_TOKEN', data.token)
         setToken(data.token)// 登录成功后将token存储在cookie之中
-        resolve()
+        resolve(username)
       }).catch(error => {
         reject(error)
       })
@@ -57,7 +57,7 @@ const actions = {
         const { roles, name, avatar, introduction } = data
 
         // roles must be a non-empty array
-        if (!roles || roles.length <= 0) {
+        if (!roles || roles.length <= 0) { // 验证返回的roles是否是一个非空数组
           reject('getInfo: 角色必须是非零的数组!')
         }
 
@@ -109,10 +109,10 @@ const actions = {
 
       resetRouter()
 
-      // generate accessible routes map based on roles
+      // 基于角色生成可访问的路由映射
       const accessRoutes = await dispatch('permission/generateRoutes', roles, { root: true })
 
-      // dynamically add accessible routes
+      // 动态添加可访问的路由
       router.addRoutes(accessRoutes)
 
       resolve()

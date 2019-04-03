@@ -43,7 +43,7 @@ https://hswyxj.github.io/vue_admin_demo/
 git clone https://github.com/hswyxj/vue_admin_demo.git
 
 # 进入项目目录
-cd vue_admin
+cd vue_admin_demo
 
 # 安装依赖
 npm install

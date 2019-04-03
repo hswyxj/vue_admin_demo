@@ -205,7 +205,7 @@ export default {
         this.rolesList.push(this.role)
       }
       const { description, key, name } = this.role
-      console.log(key) // this.role 提交的角色权限数据
+      // console.log(this.role) // this.role 提交的角色权限数据
       this.dialogVisible = false
       this.$notify({
         title: '成功',

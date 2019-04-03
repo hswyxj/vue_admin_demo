@@ -83,23 +83,4 @@ export default [
       }
     }
   }
-
-  // getRolechannels() {
-  //   return role_channels
-  // },
-  // addRolechannels() {
-  //   return Mock.mock('@integer(300, 5000)')
-  // },
-  // updateRolechannels() {
-  //   const res = {
-  //     data: 'success'
-  //   }
-  //   return res
-  // },
-  // deleteRolechannels() {
-  //   const res = {
-  //     data: 'success'
-  //   }
-  //   return res
-  // }
 ]
