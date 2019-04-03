@@ -40,7 +40,7 @@ https://hswyxj.github.io/vue_admin_demo/
 
 ```bash
 # 克隆项目
-git clone https://github.com/hswyxj/vue_admin.git
+git clone https://github.com/hswyxj/vue_admin_demo.git
 
 # 进入项目目录
 cd vue_admin
