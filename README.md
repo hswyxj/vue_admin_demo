@@ -32,6 +32,9 @@
  Windows 用户若安装不成功，很大概率是node-sass安装失败，[解决方案](https://github.com/PanJiaChen/vue-element-admin/issues/24)
 另外因为 node-sass 是依赖 python环境的，如果你之前没有安装和配置过的话，需要自行查看一下相关安装教程。
 
+## 在线demo展示
+https://hswyxj.github.io/vue_admin_demo/
+
 
 ## 开发
 
@@ -80,9 +83,8 @@ npm run lint
 npm run lint -- --fix
 ```
 
-## 该项目是从PanJiaChen的vue-element-admin集成项目分割的最新基于 vue-cli@3构建的新版本
+### 该项目是从作者(PanJiaChen)[https://github.com/PanJiaChen/]的vue-element-admin集成项目分割的最新基于 vue-cli@3构建的4.0.0版本（项目为基础模板功能，以便于本人后期使用）
 原项目地址：https://github.com/PanJiaChen/vue-element-admin
-
 
 
 
