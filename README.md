@@ -84,7 +84,7 @@ npm run lint -- --fix
 ```
 
 ### 该项目是从作者[PanJiaChen](https://github.com/PanJiaChen/) 的vue-element-admin集成项目分割的最新基于 vue-cli@3构建的4.0.0版本（项目为基础模板功能，以便于本人后期使用）
-原项目地址：https://hswyxj.github.io/vue_admin_demo
+原项目地址：https://github.com/PanJiaChen/vue-element-admin
 
 
 
