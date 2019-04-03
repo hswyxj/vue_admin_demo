@@ -160,7 +160,7 @@ setting.json：
 - │   │── Tinymce                # 富文本
 - │   │── favicon.ico            # favicon图标
 - │   └── index.html             # html模板
-- ├── docs                       // 项目build打包的最终产物（ 忽略- 打包目录可以在config/index.js设置修改）
+- ├── docs                       // 项目build打包的最终产物（ 忽略- 打包目录可以在vue.config.js设置修改）
 - ├── src                        // 源代码
 - │   ├── api                    // 所有api请求
 - │   ├── assets                 // 主题 字体等静态资源
